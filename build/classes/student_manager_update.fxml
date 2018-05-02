@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentManagerUpdateController">
+   <top>
+      <Label text="UPDATE STUDENT" BorderPane.alignment="CENTER_LEFT">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#onSave" text="Save" />
+            <Button mnemonicParsing="false" onAction="#onReturn" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="207.0" layoutY="4.0" text="INFORMATION">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="34.0" text="ID #" AnchorPane.leftAnchor="8.0" />
+            <Label fx:id="idLabel" layoutX="126.0" layoutY="32.0" text="ID">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="51.0" text="Name" AnchorPane.leftAnchor="8.0" />
+            <Label fx:id="nameLabel" layoutX="126.0" layoutY="51.0" text="Name">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="71.0" text="Tuition Fee" AnchorPane.leftAnchor="8.0" />
+            <Label fx:id="tuitionFeeLabel" layoutX="126.0" layoutY="71.0" text="Tuition Fee">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="8.0" layoutY="142.0" prefHeight="0.0" prefWidth="480.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" />
+            <Label layoutX="221.0" layoutY="154.0" text="MODULES">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="191.0" text="New Modules" AnchorPane.leftAnchor="8.0" />
+            <Spinner fx:id="newModuleField" layoutX="112.0" layoutY="186.0" />
+            <Label layoutX="8.0" layoutY="227.0" text="Old Modules" />
+            <Spinner fx:id="oldModuleField" layoutX="112.0" layoutY="222.0" />
+            <Label layoutX="309.0" layoutY="191.0" text="Total Modules" />
+            <Label fx:id="totalModuleLabel" layoutX="420.0" layoutY="189.0" text="Modules">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="91.0" text="Balance" />
+            <Label fx:id="balanceLabel" layoutX="126.0" layoutY="91.0" text="Balance">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="111.0" text="Amount Paid" />
+            <Label fx:id="amountPaidLabel" layoutX="126.0" layoutY="111.0" text="Amount Paid">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
